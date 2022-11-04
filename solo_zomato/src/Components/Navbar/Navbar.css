@@ -1,0 +1,19 @@
+.header_img:hover {
+  cursor: pointer;
+}
+.header {
+  align-items: center;
+}
+
+.zomato_search {
+  width: 700px;
+}
+
+.dropdown_container {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.icon_location {
+  color: #ff7e8b;
+  font-size: 1.5em;
+}
