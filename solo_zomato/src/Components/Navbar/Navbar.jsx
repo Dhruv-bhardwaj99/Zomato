@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Container, Dropdown, Form, Image } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import { MdLocationPin } from "react-icons/md";
+import { BiSearch } from "react-icons/bi";
 import "./Navbar.css";
 
 export function My_Navbar() {
@@ -20,8 +21,8 @@ export function My_Navbar() {
               src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
               alt="zomato_logo"
               className="header_img"
-              width="60"
-              height="30"
+              width="100"
+              height="40"
             />
           </Navbar.Brand>
           {/* <Form className="d-flex">
@@ -35,10 +36,9 @@ export function My_Navbar() {
           </Form> */}
           <div>
             <div>
-              <Dropdown>
+              <Dropdown className="d-flex main-location-container">
                 <Dropdown.Toggle className="bg-transparent text-dark border-light h-100 dropdown_container">
-                  <MdLocationPin className="icon_location" />{" "}
-                  Bangalore
+                  <MdLocationPin className="icon_location" /> Bangalore
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
@@ -49,6 +49,13 @@ export function My_Navbar() {
                     Something else
                   </Dropdown.Item>
                 </Dropdown.Menu>
+                <div className="location-search-separator"></div>
+                <div className="header-search d-flex">
+                  <BiSearch className="header-search-icon" />
+                  <div className="m-auto" >
+                    <input type="text" placeholder="search for restaurant, cuisine or a dish" className="search-input" />
+                  </div>
+                </div>
               </Dropdown>
             </div>
           </div>

@@ -3,17 +3,44 @@
 }
 .header {
   align-items: center;
+  /* height: 100px; */
 }
 
 .zomato_search {
   width: 700px;
 }
 
-.dropdown_container {
+.main-location-container{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  width: 750px;
+  padding: 0% 5%;
 }
 
 .icon_location {
   color: #ff7e8b;
   font-size: 1.5em;
+}
+
+.location-search-separator{
+  height: 20px;
+  border: 1px solid rgb(130, 130, 130);
+  background-color: rgb(130, 130, 130);
+  border-radius: 500px;
+  margin: auto;
+}
+
+.header-search-icon{
+  margin: 0% 2%;
+  height: 100%;
+  font-size: 2.9em;
+}
+
+.search-input{
+  font-size: 15px;
+  height: 80%;
+  /* margin: 0% 5%; */
+  width: 400px;
+  background-color: transparent;
+  border: transparent;
 }
